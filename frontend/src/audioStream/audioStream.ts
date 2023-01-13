@@ -3,24 +3,24 @@ class AudioStream {
 
   // destinationNode:AudioDestinationNode;
   stream: MediaStream | undefined;
-  destinationNode: AudioDestinationNode;
+  // destinationNode: AudioDestinationNode;
   sourceNode!: AudioNode;
   // gainNode: Audio;
-  gainNode: AudioNode;
+  // gainNode: AudioNode;
   getBuffer: boolean;
   mediaRecorder: MediaRecorder | undefined;
   cb!: CallableFunction;
   constructor(
     sampleRate: number,
     arraylength: number,
-    mediaElement: HTMLMediaElement,
+    time: number,
     cb: CallableFunction
   ) {
     this.context = new AudioContext();
     // this.sourceNode = this.context.createMediaElementSource();
-    this.destinationNode = this.context.destination;
+    // this.destinationNode = this.context.destination;
     this.cb = cb;
-    this.gainNode = this.context.createGain();
+    // this.gainNode = this.context.createGain();
     this.getBuffer = false;
     if (navigator.mediaDevices) {
       navigator.mediaDevices
@@ -32,7 +32,7 @@ class AudioStream {
           });
           // this.cb = () => {};
           // console.log("xx", this.mediaRecorder);
-          this.mediaRecorder.start(200);
+          this.mediaRecorder.start(time);
           this.mediaRecorder.ondataavailable = async (event) => {
             if (
               event.data.size > 0 &&

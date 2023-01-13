@@ -16,7 +16,7 @@ function App() {
   const ref = useRef(null);
   useEffect(() => {
     if (ref.current) {
-      const as = new AudioStream(16000, 3200, ref.current, doWith16array);
+      const as = new AudioStream(16000, 3200, 200, doWith16array);
 
       setAudioStream(as);
 
