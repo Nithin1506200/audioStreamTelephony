@@ -34,10 +34,10 @@ stream(stream the buffer)
 
 ```mermaid
 graph TD;
-A(context)
-B(source node)
-C(gain node)
-D(destination node)
+A(mediarecorder)
+B(200ms data)
+C(32 float -> 16bit int)
+D(stream)
     A-->B;
     B-->C;
     C-->D;
