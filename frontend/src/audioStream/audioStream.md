@@ -1,6 +1,7 @@
 - [audio characteristics](#audio-characteristics)
 - [Fromula](#fromula)
 - [Audiocontext architecture](#audiocontext-architecture)
+- [Audio receive](#audio-receive)
 
 # audio characteristics
 
@@ -41,4 +42,17 @@ D(stream)
     A-->B;
     B-->C;
     C-->D;
+```
+
+# Audio receive
+
+```mermaid
+   graph TD
+   A(Blob)
+
+   B(ArrayBuffer)
+   C(32bit float array)
+   D(setaudio same sample rate)
+   E(AudiocontextApi play)
+   A -->B-->C-->D-->E
 ```
