@@ -68,9 +68,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-.data {
-  color: rgb(109, 255, 47);
-  max-height: 70vh;
-  overflow-x: scroll;
-  font-size: xx-small;
-}

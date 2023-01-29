@@ -56,3 +56,11 @@ D(stream)
    E(AudiocontextApi play)
    A -->B-->C-->D-->E
 ```
+
+https://stackoverflow.com/questions/64758250/why-does-the-mimetype-of-media-recorder-change-when-i-start-recording
+
+https://base64.guru/converter/decode/audio
+
+https://codepen.io/xewl/pen/NjyRJx
+
+https://www.npmjs.com/package/recordrtc
