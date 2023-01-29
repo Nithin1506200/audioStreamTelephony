@@ -1,0 +1,24 @@
+{
+  "name": "wss",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.4",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "web-audio-api": "^0.2.2",
+    "ws": "^8.12.0"
+  }
+}
